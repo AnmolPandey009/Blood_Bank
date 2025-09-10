@@ -23,8 +23,9 @@ export default function Navbar() {
   }, [])
 
   return (
-    <div className="px-10">
-    <header className={`sticky top-0 z-50 transition-shadow ${scrolled ? 'bg-white/95 shadow-md backdrop-blur' : 'bg-transparent'}`}>
+
+    // <div className="px-10">
+    <header className={`px-10 sticky top-0 z-50 transition-shadow ${scrolled ? 'bg-white/95 shadow-md backdrop-blur' : 'bg-transparent'}`}>
       <div className="container-responsive flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2">
           <span className="inline-flex items-center justify-center w-9 h-9 rounded-full bg-red-500 text-white font-bold">+
@@ -92,7 +93,7 @@ export default function Navbar() {
         </div>
       )}
     </header>
-    </div>
+    // </div>
   )
 }
 

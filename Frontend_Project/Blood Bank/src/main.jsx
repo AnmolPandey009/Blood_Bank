@@ -4,11 +4,17 @@ import { BrowserRouter } from 'react-router-dom'
 import './index.css'
 import App from './App.jsx'
 import Header from './Components/Header.jsx'
+import Home from './Components/Home.jsx'
+import BloodDonationInfo from './Components/BloodDonationInfo.jsx'
+import Footer from './Components/Footer.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <BrowserRouter>
       <Header />
+      <Home />
+      <BloodDonationInfo />
+      <Footer />
       {/* <App /> */}
     </BrowserRouter>
   </StrictMode>,
