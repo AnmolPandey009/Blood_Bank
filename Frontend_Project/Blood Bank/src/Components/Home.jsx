@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import Cards from './cards'
+import BloodDonationInfo from './BloodDonationInfo'
 
 export default function Home() {
   return (
@@ -43,6 +45,10 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <BloodDonationInfo />
+      <Cards />
+
     </div>
   )
 }

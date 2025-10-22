@@ -2,7 +2,9 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
-    <footer className="border-t bg-white">
+    <>
+  
+    <footer className="border-t bg-white px-4">
       <div className="container-responsive py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
         <div>
           <div className="flex items-center gap-2 mb-3">
@@ -41,7 +43,8 @@ export default function Footer() {
           <div className="mt-3 text-sm text-gray-600">We care about your privacy.</div>
         </div>
       </div>
-      <div className="border-t py-4 text-center text-sm text-gray-600">© {new Date().getFullYear()} BloodBank. All rights reserved.</div>
     </footer>
+      <div className="border-t py-4 text-center text-sm text-gray-600">© {new Date().getFullYear()} BloodBank. All rights reserved.</div>
+      </>
   )
 }
