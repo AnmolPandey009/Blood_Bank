@@ -12,15 +12,6 @@ const navItems = [
   { to: '/contact', label: 'Contact' },
 ]
 
-const adminNavItems = [
-  { to: '/blood-inventory', label: 'Inventory' },
-  { to: '/donation-history', label: 'Donors' },
-  { to: '/hospital-management', label: 'Hospitals' },
-  { to: '/request-status', label: 'Requests' },
-  { to: '/blood-issue', label: 'Issues' },
-  { to: '/billing-system', label: 'Billing' },
-]
-
 export default function Navbar() {
   const [open, setOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
@@ -69,17 +60,7 @@ export default function Navbar() {
                   </Menu.Item>
                   <Menu.Item>
                     {({ active }) => (
-                      <Link to="/role-selection" className={`block px-3 py-2 text-sm ${active ? 'bg-gray-50 text-gray-900' : 'text-gray-700'}`}>Sign Up</Link>
-                    )}
-                  </Menu.Item>
-                  <Menu.Item>
-                    {({ active }) => (
                       <Link to="/dashboard" className={`block px-3 py-2 text-sm ${active ? 'bg-gray-50 text-gray-900' : 'text-gray-700'}`}>Dashboard</Link>
-                    )}
-                  </Menu.Item>
-                  <Menu.Item>
-                    {({ active }) => (
-                      <Link to="/admin-login" className={`block px-3 py-2 text-sm ${active ? 'bg-gray-50 text-gray-900' : 'text-gray-700'}`}>Admin Login</Link>
                     )}
                   </Menu.Item>
                 </div>
@@ -106,9 +87,7 @@ export default function Navbar() {
             </Link>
             <div className="flex gap-4 pt-2">
               <Link to="/login" className="text-sm text-gray-700" onClick={() => setOpen(false)}>Login</Link>
-              <Link to="/role-selection" className="text-sm text-gray-700" onClick={() => setOpen(false)}>Sign Up</Link>
               <Link to="/dashboard" className="text-sm text-gray-700" onClick={() => setOpen(false)}>Dashboard</Link>
-              <Link to="/admin-login" className="text-sm text-gray-700" onClick={() => setOpen(false)}>Admin Login</Link>
             </div>
           </div>
         </div>
